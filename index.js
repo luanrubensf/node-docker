@@ -11,7 +11,7 @@ const app = express();
 app.use(bodyParser.json());
 
 const redisClient = redis.createClient({
-    host: 'redis-server', //ou localhost ou 'redis-server'
+    host: 'host.docker.internal', //ou localhost ou 'redis-server' ou host.docker.internal 
     port: 6379
 });
 
